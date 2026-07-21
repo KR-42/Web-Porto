@@ -1,0 +1,6 @@
+import { ImageResponse } from "next/og";
+import { profile } from "@/data/profile";
+export const alt = "Rafly Portofolio — Network Security and Technology Projects";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function Image() { return new ImageResponse(<div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 72, background: "#07101d", color: "#edf6ff", fontFamily: "sans-serif", backgroundImage: "linear-gradient(135deg,#07101d 35%,#0d2d4c)" }}><div style={{ display: "flex", alignItems: "center", fontSize: 28, color: "#38a5ff", fontWeight: 700 }}>{profile.siteName} · 2026</div><div style={{ display: "flex", flexDirection: "column" }}><div style={{ display: "flex", flexDirection: "column", fontSize: 72, fontWeight: 700, letterSpacing: "-3px", lineHeight: 1 }}><span>Rafly Athallah</span><span>Khansa Putra</span></div><div style={{ display: "flex", fontSize: 28, color: "#93a7bd", marginTop: 24 }}>Network Security Student · Technology Developer</div></div><div style={{ display: "flex", color: "#4ed9f1", fontSize: 20 }}>CYBERSECURITY / AI / WEB / XR / UI·UX</div></div>, size); }

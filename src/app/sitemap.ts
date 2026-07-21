@@ -1,0 +1,1 @@
+import type { MetadataRoute } from "next";import { projects } from "@/data/projects";export default function sitemap():MetadataRoute.Sitemap{const base=process.env.NEXT_PUBLIC_SITE_URL??"https://raflyathallah.vercel.app";return [{url:base,lastModified:new Date(),priority:1},...projects.map(p=>({url:`${base}/projects/${p.slug}`,lastModified:new Date(),priority:.8}))]}

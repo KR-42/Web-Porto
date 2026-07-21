@@ -1,0 +1,8 @@
+.env.local
+.env*.local
+.next/
+node_modules/
+tmp/
+.pdf-tools/
+references/
+*.tsbuildinfo
